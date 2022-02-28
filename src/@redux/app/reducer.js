@@ -1,20 +1,20 @@
-// import {SET_USER} from './types';
+import {SET_USER} from './types';
 
-// const initialState = {
-//   user: null,
-// };
+const initialState = {
+  user: null,
+};
 
-// const reducer = (state = initialState, action) => {
-//   const {type} = action;
+const reducer = (state = initialState, action) => {
+  const {type} = action;
 
-//   switch (type) {
-//     case SET_USER:
-//       return {...state, user: action.payload};
-//     default:
-//       break;
-//   }
+  switch (type) {
+    case SET_USER:
+      return {...state, user: action.payload};
+    default:
+      break;
+  }
 
-//   return state;
-// };
+  return state;
+};
 
-// export default reducer;
+export default reducer;
